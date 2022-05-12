@@ -1,30 +1,23 @@
 {
-    "name": "petschko/dhl-php-sdk",
-    "description": "DHL SDK",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Peter Dragicevic",
-            "email": "peter@petschko.org",
-            "homepage": "http://petschko.org/",
-            "role": "developer"
-        }
-    ],
-    "support": {
-        "email": "peter@petschko.org",
-        "issues": "https://github.com/Petschko/dhl-php-sdk/issues",
-        "source": "https://github.com/Petschko/dhl-php-sdk",
-        "docs": "http://docs.petschko.org/dhl-php-sdk/index.html"
-    },
-    "require": {
-        "php": ">=5.4.0",
-        "ext-soap": "*",
-        "ext-mbstring": "*"
-    },
-    "autoload": {
-        "psr-4": {
-            "Petschko\\DHL\\": "includes/"
-        }
+  "name": "tatenmitdaten/dhl_ship_api",
+  "version": "v0.2.0",
+  "description": "DHL API Wrapper, Idee https://github.com/Petschko/dhl-php-sdk",
+  "type": "library",
+  "keywords": ["DHL", "shipping", "api", "SOAP", "Geschaeftskunden API"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jens Braeuner",
+      "email": "info@taten-mit-daten.de"
     }
+  ],
+  "require": {
+    "ext-soap": "*",
+    "ext-mbstring": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "tatenmitdaten\\dhl\\": "src/"
+    }
+  }
 }
