@@ -1,6 +1,6 @@
 {
   "name": "tatenmitdaten/dhl_ship_api",
-  "version": "v0.2.0",
+  "version": "v0.2.1",
   "description": "DHL API Wrapper, Idee https://github.com/Petschko/dhl-php-sdk",
   "type": "library",
   "keywords": ["DHL", "shipping", "api", "SOAP", "Geschaeftskunden API"],

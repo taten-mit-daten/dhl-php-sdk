@@ -7,7 +7,6 @@ use tatenmitdaten\dhl\ShipmentOrder;
 use tatenmitdaten\dhl\BusinessShipment;
 
 require_once __DIR__ . '/vendor/autoload.php';
-//include('dhl-php-sdk.php');
 
 $credentials = new Credentials(Credentials::TEST_NORMAL);
 $credentials->setApiUser('Entwickerl ID'); // <- Entwickler ID aus dem DHL Portal

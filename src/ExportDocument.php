@@ -38,6 +38,13 @@ class ExportDocument {
     const TERMS_OF_TRADE_DDX = 'DDX';
 
     /**
+     * Constants for Currency
+     */
+    const CUSTOMS_CURRENCY_EUR = 'EUR';
+    const CUSTOMS_CURRENCY_USD = 'USD';
+    const CUSTOMS_CURRENCY_GBP = 'GBP';
+
+    /**
      * In case invoice has a number, client app can provide it in this field.
      *
      * Note: Optional
@@ -93,6 +100,19 @@ class ExportDocument {
      * 									or null for none
      */
     private $termsOfTrade = null;
+
+    /**
+     * Waehrungsarten
+     *
+     * moegliche Werte:
+     * EUR - Euro
+     * USD - US-Dollar
+     * GBP - britische Pfund
+     *
+     * @var string|null $customsCurrency
+     *
+     */
+    private $customsCurrency = null;
 
     /**
      * Place of committal
@@ -164,6 +184,7 @@ class ExportDocument {
         unset($this->exportType);
         unset($this->exportTypeDescription);
         unset($this->termsOfTrade);
+        unset($this->customsCurrency);
         unset($this->placeOfCommittal);
         unset($this->additionalFee);
         unset($this->permitNumber);
@@ -242,6 +263,24 @@ class ExportDocument {
      */
     public function setTermsOfTrade($termsOfTrade) {
         $this->termsOfTrade = $termsOfTrade;
+    }
+
+    /**
+     * Get the Currency
+     *
+     * @return null|string - Currency or null if none
+     */
+    public function getCustomsCurrency() {
+        return $this->customsCurrency;
+    }
+
+    /**
+     * Set the Currency
+     *
+     * @param null|string $customsCurrency - Currency or null for none
+     */
+    public function setCustomsCurrency($customsCurrency) {
+        $this->customsCurrency = $customsCurrency;
     }
 
     /**
@@ -395,6 +434,9 @@ class ExportDocument {
 
         if($this->getTermsOfTrade() !== null)
             $class->termsOfTrade = $this->getTermsOfTrade();
+
+        if($this->getCustomsCurrency() !== null)
+            $class->customsCurrency = $this->getCustomsCurrency();
 
         $class->placeOfCommital = $this->getPlaceOfCommittal();
         $class->additionalFee = $this->getAdditionalFee();
