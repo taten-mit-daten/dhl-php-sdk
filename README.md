@@ -41,6 +41,10 @@ const NEWEST_VERSION = '3.2.2';
 
 ...
 ```
+## Updates
+
+v0.2.1 - In der Zollanmeldung (d.h. Class ExportDocument) kann jetzt eine function setCustomsCurrency() mit der die Waehrung der Zollanmeldung übergeben werden kann.
+
 ## Motivation
 
 Für mein Lagerprogramm benötigte mein Lieblingskunde eine DHL Versandanbindung und ich eine einfach zu handhabende Lösung. Kann es selber kaum glauben, damit werden jetzt > 100k Paket pro Jahr in die Welt verschickt...
