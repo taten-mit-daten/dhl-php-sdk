@@ -34,7 +34,7 @@ class ExportDocument {
      */
     const TERMS_OF_TRADE_DDP = 'DDP';
     const TERMS_OF_TRADE_DXV = 'DXV';
-    const TERMS_OF_TRADE_DDU = 'DDU';
+    const TERMS_OF_TRADE_DAP = 'DAP';
     const TERMS_OF_TRADE_DDX = 'DDX';
 
     /**
@@ -93,7 +93,7 @@ class ExportDocument {
      * Possible values:
      * DDP - Delivery Duty Paid
      * DXV - Delivery duty paid (excl. VAT )
-     * DDU - DDU - Delivery Duty Paid
+     * DAP - DAP - formerly DDU, Delivery At Place
      * DDX - Delivery duty paid (excl. Duties, taxes and VAT)
      *
      * @var string|null $termsOfTrade - Terms of trades (Can assigned with ExportDocument::TERMS_OF_TRADE_{TYPE})
