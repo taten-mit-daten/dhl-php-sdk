@@ -43,7 +43,8 @@ const NEWEST_VERSION = '3.2.2';
 ```
 ## Updates
 
-v0.2.1 - In der Zollanmeldung (d.h. Class ExportDocument) kann jetzt eine function setCustomsCurrency() mit der die Waehrung der Zollanmeldung übergeben werden kann.
+v0.2.1 - In der Zollanmeldung (d.h. Class ExportDocument) kann jetzt eine function setCustomsCurrency() mit der die Waehrung der Zollanmeldung übergeben werden kann.  
+v0.2.2 - in der Zollanmeldung, Terms of Trades DDU dur DAP ersetzt
 
 ## Motivation
 
