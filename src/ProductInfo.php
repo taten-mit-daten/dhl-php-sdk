@@ -311,7 +311,7 @@ class ProductInfo {
         ));
         self::addProduct($obj);
 
-        $obj = new Product(ShipmentDetails::PRODUCT_TYPE_WARENPOST);
+        $obj = new Product(ShipmentDetails::PRODUCT_TYPE_KLEINPAKET);
         $obj->setName('Warenpost');
         $obj->setAustria(true);
         $obj->setMinLength(10);
@@ -319,13 +319,12 @@ class ProductInfo {
         $obj->setMinWidth(7);
         $obj->setMaxWidth(25);
         $obj->setMinHeight(0.1);
-        $obj->setMaxHeight(10);
+        $obj->setMaxHeight(8);
         $obj->setMaxWeight(1);
         $obj->setServices(array(
             'preferredNeighbourEnabled',
             'preferredLocationEnabled',
-            'goGreen',
-            'premium'
+            'goGreen'
         ));
         self::addProduct($obj);
 
