@@ -20,7 +20,7 @@ composer require taten-mit-daten/dhl-php-sdk
 ## Kompatiblität
 
 Das Projekt ist getestet mit der DHL-SOAP-API **Version 3.2.2**.
-Ältere 3er Versionen sollten auch gehen, unterstuetzen aber nicht die DHL Warenpost 
+Ältere 3er Versionen sollten auch gehen.
 
 ## Usage / Getting started
 
@@ -44,8 +44,9 @@ const NEWEST_VERSION = '3.2.2';
 ## Updates
 
 v0.2.1 - In der Zollanmeldung (d.h. Class ExportDocument) kann jetzt eine function setCustomsCurrency() mit der die Waehrung der Zollanmeldung übergeben werden kann.  
-v0.2.2 - in der Zollanmeldung, Terms of Trades DDU dur DAP ersetzt
-v0.2.3 - Produktart Warenpost National wird zu Kleinpaket
+v0.2.2 - in der Zollanmeldung, Terms of Trades DDU dur DAP ersetzt  
+v0.2.3 - Produktart Warenpost National wird zu Kleinpaket  
+v0.2.4 - Sandbox Credentials an neue DHL Vorgaben angepasst
 
 ## Motivation
 

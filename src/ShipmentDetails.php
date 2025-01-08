@@ -5,8 +5,8 @@ namespace tatenmitdaten\dhl;
 /**
  * Author: Jens Braeuner [info@taten-mit-daten.de], Idee: Peter Dragicevic [peter@petschko.org]
  * Authors-Website: https:// www.taten-mit-daten.de http://petschko.org/
- * Date: 19.01.2021
- * Version: 0.1.0
+ * Date: 08.01.2025
+ * Version: 0.2.0
  *
  * Notes: Details for a Shipment (Like size/Weight etc)
  */
@@ -33,7 +33,7 @@ class ShipmentDetails {
      * - ShipmentDetails::PRODUCT_TYPE_AUSTRIA_PACKAGE -> Austria Package
      * - ShipmentDetails::PRODUCT_TYPE_AUSTRIA_INTERNATIONAL_PACKAGE -> Austria International Package
      * - ShipmentDetails::PRODUCT_TYPE_CONNECT_PACKAGE -> Warenpost international
-     * - 'V62KP' or ShipmentDetails::PRODUCT_TYPE_Kleinpaket -> Kleinpaket
+     * - 'V62KP' or ShipmentDetails::PRODUCT_TYPE_KLEINPAKET -> Kleinpaket
      * - ShipmentDetails::PRODUCT_TYPE_WARENPOST_INTERNATIONAL -> Warenpost international
      */
     const PRODUCT_TYPE_NATIONAL_PACKAGE = 'V01PAK';
@@ -65,7 +65,7 @@ class ShipmentDetails {
      * 	'V86PARCEL' or ShipmentDetails::PRODUCT_TYPE_AUSTRIA_PACKAGE -> Austria Package
      * 	'V82PARCEL' or ShipmentDetails::PRODUCT_TYPE_AUSTRIA_INTERNATIONAL_PACKAGE -> Austria International Package
      * 	'V87PARCEL' or ShipmentDetails::PRODUCT_TYPE_CONNECT_PACKAGE -> Connect Package
-     *  'V62KP' or ShipmentDetails::PRODUCT_TYPE_Kleinpaket -> Kleinpaket
+     *  'V62KP' or ShipmentDetails::PRODUCT_TYPE_KLEINPAKET -> Kleinpaket
      *	'V66WPI' or ShipmentDetails::PRODUCT_TYPE_WARENPOST_INTERNATIONAL -> Warenpost International
      *
      * @var string $product - Product to use (Default: National Package)
@@ -241,7 +241,7 @@ class ShipmentDetails {
      * 	'V86PARCEL' or ShipmentDetails::PRODUCT_TYPE_AUSTRIA_PACKAGE -> Austria Package
      * 	'V82PARCEL' or ShipmentDetails::PRODUCT_TYPE_AUSTRIA_INTERNATIONAL_PACKAGE -> Austria International Package
      * 	'V87PARCEL' or ShipmentDetails::PRODUCT_TYPE_CONNECT_PACKAGE -> Connect Package
-     *  'V62KP' or ShipmentDetails::PRODUCT_TYPE_Kleinpaket -> Kleinpaket
+     *  'V62KP' or ShipmentDetails::PRODUCT_TYPE_KLEINPAKET -> Kleinpaket
      *	'V66WPI' or ShipmentDetails::PRODUCT_TYPE_WARENPOST_INTERNATIONAL -> Warenpost International
      *
      * @return string - Used Product
@@ -265,7 +265,7 @@ class ShipmentDetails {
      * 	'V86PARCEL' or ShipmentDetails::PRODUCT_TYPE_AUSTRIA_PACKAGE -> Austria Package
      * 	'V82PARCEL' or ShipmentDetails::PRODUCT_TYPE_AUSTRIA_INTERNATIONAL_PACKAGE -> Austria International Package
      * 	'V87PARCEL' or ShipmentDetails::PRODUCT_TYPE_CONNECT_PACKAGE -> Connect Package
-     *  'V62KP' or ShipmentDetails::PRODUCT_TYPE_Kleinpaket -> Kleinpaket
+     *  'V62KP' or ShipmentDetails::PRODUCT_TYPE_KLEINPAKET -> Kleinpaket
      *	'V66WPI' or ShipmentDetails::PRODUCT_TYPE_WARENPOST_INTERNATIONAL -> Warenpost International
      *
      * @param string $product - Product, which should be used

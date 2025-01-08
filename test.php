@@ -38,6 +38,8 @@ $receiver_1->setCountryISOCode('DE');
 $shipdetail = new ShipmentDetails($credentials->getEkp(10) . '0101');
 $shipdetail->setWeight(1.2);
 $shipdetail->setCustomerReference('0815');
+// Produltart ferstlegen wenn kein Paket (default), z.B.
+//$shipdetail->setProduct($shipdetail::PRODUCT_TYPE_KLEINPAKET);
 
 $shipdetail_1 = new ShipmentDetails($credentials->getEkp(10) . '0101');
 $shipdetail_1->setWeight(1.5);

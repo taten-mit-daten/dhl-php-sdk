@@ -3,10 +3,10 @@
 namespace tatenmitdaten\dhl;
 
 /**
- * Author: Maximilian Stark [mail@dakror.de]
- * Authors-Website: http://dakror.de/
- * Date: 19.01.2021
- * Version: 0.1.0
+ * Author: Jens Braeuner [info@taten-mit-daten.de], Idee: Peter Dragicevic [peter@petschko.org]
+ * Authors-Website: https:// www.taten-mit-daten.de http://petschko.org/
+ * Date: 08.01.2025
+ * Version: 0.2.0
  *
  * Notes: Contains the ProductInfo Class
  */
@@ -312,7 +312,7 @@ class ProductInfo {
         self::addProduct($obj);
 
         $obj = new Product(ShipmentDetails::PRODUCT_TYPE_KLEINPAKET);
-        $obj->setName('Warenpost');
+        $obj->setName('Kleinpaket');
         $obj->setAustria(true);
         $obj->setMinLength(10);
         $obj->setMaxLength(35);

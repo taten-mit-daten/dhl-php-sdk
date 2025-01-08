@@ -4,8 +4,8 @@ namespace tatenmitdaten\dhl;
 /**
  * Author: Jens Braeuner [info@taten-mit-daten.de], Idee: Peter Dragicevic [peter@petschko.org]
  * Authors-Website: https:// www.taten-mit-daten.de http://petschko.org/
- * Date: 19.01.2021
- * Version: 0.1.0
+ * Date: 08.01.2025
+ * Version: 0.2.0
  *
  */
 
@@ -25,22 +25,22 @@ class Credentials {
     /**
      * DHL Business-API Test-User (Normal)
      */
-    const DHL_BUSINESS_TEST_USER = '2222222222_01';
+    const DHL_BUSINESS_TEST_USER = 'user-valid';
 
     /**
      * DHL Business-API Test-User (Thermo)
      */
-    const DHL_BUSINESS_TEST_USER_THERMO = '2222222222_03';
+    const DHL_BUSINESS_TEST_USER_THERMO = 'user-valid';
 
     /**
      * DHL Business-API Test-User-Password
      */
-    const DHL_BUSINESS_TEST_USER_PASSWORD = 'pass';
+    const DHL_BUSINESS_TEST_USER_PASSWORD = 'SandboxPasswort2023!';
 
     /**
      * DHL Business-API Test-EKP
      */
-    const DHL_BUSINESS_TEST_EKP = '2222222222';
+    const DHL_BUSINESS_TEST_EKP = '3333333333';
 
     /**
      * Contains the DHL-Intraship Username
